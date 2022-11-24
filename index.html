@@ -15,12 +15,17 @@
   </head>
   <body>
     <div class="nav-container">
+      <div class="nav-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
       <div class="navbar">
         <div class="logo">
           <img src="images/sapir-logo.png" width="125px" />
         </div>
         <nav>
-          <ul>
+          <ul class="nav-menu">
             <li class="jump"><a href="#home">דף הבית</a></li>
             <li class="jump"><a href="#">קטגוריות</a></li>
             <li class="jump"><a href="#">כל המוצרים</a></li>
@@ -28,20 +33,22 @@
             <li class="jump"><a href="#">חשבון</a></li>
           </ul>
         </nav>
-        <a href="#" class="icon-text jump wish-list-btn-container">
-          <img src="images/heart.png" width="30px" />
-          <span
-            >רשימת<br />
-            המשאלות</span
-          >
-        </a>
-        <a href="#" class="icon-text jump cart-btn-container">
-          <img src="images/cart.png" width="30px" />
-          <span
-            >עגלת<br />
-            הקניות</span
-          >
-        </a>
+        <div class="cart-wishlist-container">
+          <a href="#" class="icon-text jump wish-list-btn-container">
+            <img src="images/heart.png" width="30px" />
+            <span
+              >רשימת<br />
+              המשאלות</span
+            >
+          </a>
+          <a href="#" class="icon-text jump cart-btn-container">
+            <img src="images/cart.png" width="30px" />
+            <span
+              >עגלת<br />
+              הקניות</span
+            >
+          </a>
+        </div>
       </div>
     </div>
     <div id="home" class="openning-screen-section section">
@@ -59,39 +66,50 @@
     <div class="categories-section section">
       <div class="content">
         <div class="categories-container">
-            <div class="category-card">
-                <div class="category-card-container">
-                    <img src="RedStore_Img/images/category-2.jpg" class="category-card-img" />
-                    <h2 class="category-card-title">לדלת</h2>
-                    <p class="category-card-text">עיצובים מיוחדים לתלייה על דלתות הבית</p>
-                </div>
+          <div class="category-card">
+            <div class="category-card-container">
+              <img
+                src="RedStore_Img/images/category-2.jpg"
+                class="category-card-img"
+              />
+              <h2 class="category-card-title">לדלת</h2>
+              <p class="category-card-text">
+                עיצובים מיוחדים לתלייה על דלתות הבית
+              </p>
             </div>
-            <div class="category-card">
-                <div class="category-card-container">
-                    <img src="RedStore_Img/images/category-3.jpg" class="category-card-img"/>
-                    <h2 class="category-card-title">לסלון</h2>
-                    <p class="category-card-text">עיצובים מיוחדים שישדרגו לכם את הסלון</p>
-                </div>
+          </div>
+          <div class="category-card">
+            <div class="category-card-container">
+              <img
+                src="RedStore_Img/images/category-3.jpg"
+                class="category-card-img"
+              />
+              <h2 class="category-card-title">לסלון</h2>
+              <p class="category-card-text">
+                עיצובים מיוחדים שישדרגו לכם את הסלון
+              </p>
             </div>
-            <div class="category-card">
-                <div class="category-card-container">
-                    <img src="RedStore_Img/images/category-1.jpg"  class="category-card-img" />
-                    <h2 class="category-card-title">לשולחן</h2>
-                    <p class="category-card-text">קיטושים לשולחן שילהיבו את האורחים שלכם</p>
-                </div>
+          </div>
+          <div class="category-card">
+            <div class="category-card-container">
+              <img
+                src="RedStore_Img/images/category-1.jpg"
+                class="category-card-img"
+              />
+              <h2 class="category-card-title">לשולחן</h2>
+              <p class="category-card-text">
+                קיטושים לשולחן שילהיבו את האורחים שלכם
+              </p>
             </div>
-          
+          </div>
         </div>
       </div>
     </div>
 
     <!--! Back to home button !-->
     <div class="back-to-home-container">
-        <a href="#home" class="back-to-home">
-            &#8593;
-        </a>
+      <a href="#home" class="back-to-home"> &#8593; </a>
     </div>
-
 
     <script type="module" src="code.js"></script>
   </body>

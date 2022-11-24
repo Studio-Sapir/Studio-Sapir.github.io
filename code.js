@@ -5,7 +5,6 @@ scrollUpButton.classList.add('hide-button')
 
 const displayScrollUpButton = () => {
     let scrollPosition = window.scrollY
-    console.log(scrollPosition)
     if(scrollPosition > 0) {
         navbar.classList.add('nav-active');
         scrollUpButton.classList.remove('hide-button')
@@ -16,3 +15,30 @@ const displayScrollUpButton = () => {
     } 
 }
 window.addEventListener('scroll', displayScrollUpButton);
+
+// Display Mobile Menu
+
+const mobileMenu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.nav-menu');
+const navLogo = document.querySelector('.logo')
+const allSite = document.querySelector('.concent')
+
+const applyMobileMenu = () => {
+    mobileMenu.classList.toggle('is-active');
+    menuLinks.classList.toggle('active');
+};
+
+mobileMenu.addEventListener('click', applyMobileMenu);
+
+//  Close mobile Menu when clicking on a menu item or the screen
+const hideMobileMenu = () => {
+    const menuBars = document.querySelector('.is-active');
+    if (window.innerWidth <= 720 && menuBars) {
+        mobileMenu.classList.toggle('is-active');
+        menuLinks.classList.remove('active');
+    }
+};
+
+menuLinks.addEventListener('click', hideMobileMenu);
+navLogo.addEventListener('click', hideMobileMenu);
+allSite.addEventListener('click', hideMobileMenu);
